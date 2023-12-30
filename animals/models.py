@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 class Custom_User(AbstractUser):
     is_manager = models.BooleanField(default = False)
 
-    def str(self):
+    def __str__(self):
         return self.username
 
 class Record(models.Model):
@@ -23,9 +23,10 @@ class Animal(models.Model):
     class_an = models.CharField(max_length = 50,blank = True,null = True)
     result = models.IntegerField(blank = True,null = True)
     status = models.CharField(max_length = 20)
-    start_date = models.DateField(blank = True, null = True)
-    in_work = models.DateField(blank = True, null = True)
-    end_date = models.DateField(blank = True, null = True)
+    start_date = models.DateTimeField(blank = True, null = True)
+    in_work = models.DateTimeField(blank = True, null = True)
+    end_date = models.DateTimeField(blank = True, null = True)
+    animal_description = models.TextField(blank = True,null=True)
     moderator = models.ForeignKey(Custom_User, on_delete = models.CASCADE, related_name = 'moder',blank = True, null = True)
     creator = models.ForeignKey(Custom_User, on_delete = models.CASCADE, related_name = 'creator')
 
