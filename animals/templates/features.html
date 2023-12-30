@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+    <title>Подробная информация</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style_features.css' %}">
+</head>
+<body>
+  <div class = 'base_container'>
+    <div class = 'picture_container'>
+      <img src = '{{an.photo}}' class = 'an_photo'>
+    </div>
+    <div class = 'anrecord_container' id="name">
+      {{an.name}}
+    </div>
+    <div class = 'anrecord_container' id="record">
+      {{an.record}}
+    </div>
+    <div class = 'anrecord_container' id="typeof">
+      {{an.typeof}}
+    </div>
+    <div class = 'aninf_container'>
+      {{an.inf}}
+    </div>
+    <div class = 'button_container'>
+      <a href="{% url 'main_page'%}"> Назад </a>
+    </div>
+  </div>
+</body>
+</html>
