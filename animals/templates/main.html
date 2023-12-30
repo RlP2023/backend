@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+    <title>Животные рекордсмены</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+    <form action="{% url 'main_page' %}" method="get" enctype="multipart/form-data">
+      <input type = 'text' name = 'text' placeholder="Введите рекорд" class = 'search_field' value = "{{search_text}}">
+      <input type="submit" hidden />
+    </form>
+    <div class = 'name_cantainer'>Животные рекордсмены</div>
+  {% for an in data%}
+    <div class = 'base_container'>
+      <div class = 'picture_container'>
+        <img src = '{{an.photo_url}}' class = 'an_photo'>
+      </div>
+      <div class = 'anrecord_container'>
+        {{an.rec_name}}
+      </div>
+      <div class = 'aninf_container'>
+        {{an.description}}
+      </div>
+      <div class = 'button_container'>
+        <a href="{% url 'an_url' an.record_id %}"> Подробнее </a>
+      </div>
+      <div class = 'button_del_container'>
+        <form action="/delete_rec/{{an.record_id}}/" method='post'>
+          {% csrf_token %}
+          <button class="button_more">Удалить</button>
+        </form>
+      </div>
+    </div>
+  {% endfor %}
+
+</body>
+</html>
