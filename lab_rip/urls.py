@@ -21,5 +21,6 @@ from animals import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("animals/", views.mainpage, name = 'main_page'),
-    path("animal/<int:id>", views.animal, name = 'an_url')
+    path("animal/<int:id>", views.animal, name = 'an_url'),
+    path('delete_rec/<int:id>/', views.delete_rec, name = 'delete_rec')
 ]

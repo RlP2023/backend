@@ -13,8 +13,8 @@ body  {
     flex-shrink: 0;
     border-radius: 15px;
     background: #94ABFF;
-    margin-left: 33px;
-    margin-top: 95px;
+    margin-left: 207px;
+    margin-top: 167px;
     
 }
 
@@ -62,7 +62,7 @@ body  {
 
 .aninf_container{
     width: 341px;
-    height: 96px;
+    height: 50px;
     flex-shrink: 0;
     border-radius: 15px;
     background: #FFF;
@@ -76,7 +76,7 @@ body  {
 }
 
 .button_container{
-    width: 341px;
+    width: 171px;
     height: 43px;
     flex-shrink: 0;
     border-radius: 15px;
@@ -84,7 +84,21 @@ body  {
     display: inline;
     position: absolute;
     margin-top: 290px;
-    margin-left: 448px;
+    margin-left: 619px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.button_del_container{
+    width: 171px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+    display: inline;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 619px;
     text-align: center;
     font-size: 20px;
 }
