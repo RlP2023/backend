@@ -1,5 +1,5 @@
 """
-ASGI config for lab_rip project.
+ASGI config for rip_drf project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lab_rip.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rip_drf.settings')
 
 application = get_asgi_application()
