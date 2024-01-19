@@ -1,9 +1,8 @@
-### Заголовок
-Haha <br>
-пупупу
-
+### Животные рекордсмены
+Система для учета данных о живущих и вымерших животных, а также их отличительных показателей, включающую в себя веб-сервис, веб-приложение, React native приложение и асинхронный веб-сервис архива документов.<br>
+Демо-версия проекта - https://felixlex.github.io/rip_front/ <br>
 #### Мини Заголовок
-демо версия - https://felixlex.github.io/rip_front/ <br>
+
 
 нативное - https://github.com/felixlex/rip_native <br>
 фронт - https://github.com/felixlex/rip_front <br>
