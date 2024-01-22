@@ -6,3 +6,4 @@
 #### Смежные репозитории
 Нативное приложение - https://github.com/felixlex/rip_native <br>
 Фронтенд - https://github.com/felixlex/rip_front <br>
+Асинхронный - https://github.com/felixlex/rip_async
